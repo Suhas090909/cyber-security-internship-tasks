@@ -1,0 +1,36 @@
+PHISHING EMAIL ANALYSIS REPORT
+1. Overview
+A suspicious email claiming to be from "BANCO DO BRADESCO LIVELO" was analyzed.
+The message stated that 92,990 reward points were expiring today — a typical phishing tactic
+used to create urgency and trigger user action.
+2. Tools Used
+• Email Header Analyzer
+• EML Analyzer
+• VirusTotal
+• Manual link inspection
+• Visual screenshot analysis
+3. Email Header Findings
+• Sender Address: banco.bradesco@atendimento.com.br (spoofed domain)
+• SPF: FAIL — sender domain not authorized
+• DKIM: FAIL — no valid signature
+• DMARC: FAIL — domain does not align
+• Received-from IP does not belong to Bradesco infrastructure
+These indicators confirm email spoofing.
+4. Email Body Red Flags
+• Urgent language: “points expiring today”
+• Emotional manipulation: loss of high value points
+• Suspicious links disguised as Bradesco
+• Possible redirects to malware/phishing website
+5. Link & Attachment Analysis
+• VirusTotal: Link flagged by multiple engines
+• Possible credential harvesting or malware delivery
+• URLs mismatched from displayed text
+6. Conclusion
+The email is classified as PHISHING due to spoofed headers, mismatched URLs, urgency-based
+language, and malicious indicators detected by VirusTotal and EML/Header analysis tools.
+Recommendation:
+• Do NOT click any link
+• Do NOT enter credentials
+• Report to email provider
+• Block sender
+End of Report.
